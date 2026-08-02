@@ -30,7 +30,7 @@
     "cli"
   ],
   "author": "brpaz <bruno@brunopaz.dev>",
-  "license": "ISC",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/brpaz/bruno-openapi-sync.git"

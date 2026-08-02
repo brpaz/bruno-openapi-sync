@@ -2,7 +2,9 @@
 
 > Sync an OpenAPI spec into a [Bruno](https://www.usebruno.com/) collection (OpenCollection YAML) — repeatedly, safely, without clobbering anything you've hand-edited.
 
-Most OpenAPI → Bruno converters are one-shot: point them at a spec, get a fresh collection, done. Re-run them and any test scripts, custom auth, or example payloads you added by hand are gone. `bruno-openapi-sync` is built to be re-run — every field is either **generated** (always regenerated from the spec), **seeded** (written once on creation, then left alone), or **user-owned** (never touched), so the spec can be the source of truth for structure while your work in Bruno survives.
+## Motivation
+
+[Bruno](https://www.usebruno.com) collections built from an OpenAPI spec tend to get hand-edited over time — auth, test scripts, example bodies. Existing generators regenerate the whole collection on every run, so a re-sync after the spec changes wipes that work out. This project exists to make re-syncing safe: keep structure in lockstep with the spec while leaving anything a human touched untouched.
 
 > [!NOTE]
 > **AI-assisted / vibe-coded project, built for personal use.** This tool was built end-to-end with an AI coding agent, from requirements-gathering through implementation and tests, with a human reviewing decisions and steering scope along the way. It's tested (30 tests, all passing) and has been run against a real hosted spec, but it hasn't seen production use. Use it at your own risk — read the code before trusting it with a collection you care about.
@@ -123,4 +125,4 @@ Feature-complete against its original spec (`.scratch/openapi-sync/spec.md`): sp
 
 ## License
 
-ISC
+MIT — see [LICENSE](./LICENSE).
