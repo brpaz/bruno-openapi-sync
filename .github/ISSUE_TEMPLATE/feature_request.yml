@@ -1,0 +1,27 @@
+name: Feature request
+description: Suggest an idea or enhancement
+labels: [feature]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: What are you trying to do that the tool doesn't support today?
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: How would you like it to work? Include example CLI usage if relevant.
+    validations:
+      required: false
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Any workarounds or other approaches you've tried.
+    validations:
+      required: false

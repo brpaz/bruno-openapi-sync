@@ -38,6 +38,11 @@ Open `./my-collection` in Bruno. Change the spec, run the same command again —
 
 ## Installation
 
+### Pre-requisites
+
+- [Node.js](https://nodejs.org/) ≥ 22
+- [pnpm](https://pnpm.io/) ≥ 11
+
 Not yet published to a registry — run from source:
 
 ```bash
@@ -53,8 +58,6 @@ pnpm build
 pnpm link --global
 bruno-openapi-sync sync --spec ./openapi.yaml --output ./my-collection
 ```
-
-**Requirements**: Node.js ≥ 18, [pnpm](https://pnpm.io/).
 
 ## Usage
 
