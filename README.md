@@ -16,12 +16,7 @@ Bruno's Electron app has a native "sync collection from OpenAPI source" feature 
 ## Quick Start
 
 ```bash
-git clone <this-repo>
-cd bruno-openapi-sync
-pnpm install
-pnpm build
-
-node dist/cli.mjs sync --spec https://petstore3.swagger.io/api/v3/openapi.json --output ./my-collection
+npx @brpaz/bruno-openapi-sync sync --spec https://petstore3.swagger.io/api/v3/openapi.json --output ./my-collection
 ```
 
 Open `./my-collection` in Bruno. Change the spec, run the same command again — your edits stay, the structure stays in sync.
@@ -41,9 +36,23 @@ Open `./my-collection` in Bruno. Change the spec, run the same command again —
 ### Pre-requisites
 
 - [Node.js](https://nodejs.org/) ≥ 22
-- [pnpm](https://pnpm.io/) ≥ 11
 
-Not yet published to a registry — run from source:
+### From npm
+
+```bash
+npm install --global @brpaz/bruno-openapi-sync
+bruno-openapi-sync sync --spec ./openapi.yaml --output ./my-collection
+```
+
+Or skip the install and run it directly with `npx`:
+
+```bash
+npx @brpaz/bruno-openapi-sync sync --spec ./openapi.yaml --output ./my-collection
+```
+
+### From source
+
+Additionally requires [pnpm](https://pnpm.io/) ≥ 11.
 
 ```bash
 git clone <this-repo>
