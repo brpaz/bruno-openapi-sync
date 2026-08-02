@@ -1,0 +1,39 @@
+- name: breaking
+  color: D73A49
+  description: Breaking change
+
+- name: feature
+  color: 0E8A16
+  description: New feature
+
+- name: bug
+  color: D93F0B
+  description: Bug fix
+
+- name: security
+  color: EE0701
+  description: Security update
+
+- name: maintenance
+  color: FEF2C0
+  description: Maintenance / chore
+
+- name: docs
+  color: 0075CA
+  description: Documentation
+
+- name: dependencies
+  color: 0366D6
+  description: Dependency update
+
+- name: performance
+  color: FBCA04
+  description: Performance improvement
+
+- name: skip-changelog
+  color: FFFFFF
+  description: Exclude from release notes
+
+- name: major-update
+  color: B60205
+  description: Major version bump (Renovate) — needs manual review

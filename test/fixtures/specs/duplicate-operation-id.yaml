@@ -1,0 +1,27 @@
+openapi: 3.0.3
+info:
+  title: Bad Spec
+  version: "1.0.0"
+paths:
+  /pets:
+    get:
+      operationId: getPets
+      responses:
+        "200":
+          description: OK
+  /pets/{petId}:
+    get:
+      operationId: getPets
+      parameters:
+        - name: petId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: OK
+    post:
+      responses:
+        "201":
+          description: Created

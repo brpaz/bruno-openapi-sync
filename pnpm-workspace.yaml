@@ -1,0 +1,24 @@
+# Not a monorepo — this file exists to hold pnpm settings, which pnpm v10+
+# reads from here rather than package.json's "pnpm" field or .npmrc.
+packages:
+  - "."
+
+allowBuilds:
+  lefthook: true # fetches its Go binary via postinstall — required for the tool to work
+
+# Refuse to install a dependency version published less than 24h ago, so a
+# just-published malicious release has time to be caught/pulled before it
+# can land here. Applies to all deps, including transitive ones.
+minimumReleaseAge: 1440
+minimumReleaseAgeExclude:
+  # tsdown's rolldown-based toolchain (native bindings + JS wrappers) — ships very
+  # frequently, already a trusted direct devDependency, no reason to lag behind it.
+  - "@yuku-codegen/*"
+  - "@yuku-parser/*"
+  - "@yuku-toolchain/*"
+  - "yuku-ast"
+  - "yuku-codegen"
+  - "yuku-parser"
+  # Directly reviewed and pinned by us — the age check matters most for transitive
+  # deps we didn't explicitly choose.
+  - "js-yaml"
