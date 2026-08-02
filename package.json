@@ -1,6 +1,9 @@
 {
-  "name": "bruno-openapi-sync",
+  "name": "@brpaz/bruno-openapi-sync",
   "version": "1.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "Sync an OpenAPI spec into a Bruno collection (OpenCollection YAML) without clobbering user-owned content.",
   "type": "module",
   "main": "./dist/index.mjs",
