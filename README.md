@@ -1,6 +1,6 @@
 # bruno-openapi-sync
 
-> Sync an OpenAPI spec into a [Bruno](https://www.usebruno.com/) collection (OpenCollection YAML) — repeatedly, safely, without clobbering anything you've hand-edited.
+> Sync an OpenAPI spec into a [Bruno](https://www.usebruno.com/) collection (OpenCollection YAML) while keeping manual changes like variables or scripts.
 
 ## Motivation
 
