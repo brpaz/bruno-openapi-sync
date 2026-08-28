@@ -1,27 +1,45 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:best-practices", ":dependencyDashboard", "helpers:pinGitHubActionDigests"],
+  "extends": [
+    "config:best-practices",
+    ":dependencyDashboard",
+    "helpers:pinGitHubActionDigests"
+  ],
   "timezone": "UTC",
-  "schedule": ["before 6am on monday"],
-  "labels": ["dependencies"],
+  "schedule": [
+    "before 6am on monday"
+  ],
+  "labels": [
+    "dependencies"
+  ],
   "prConcurrentLimit": 10,
   "prHourlyLimit": 2,
   "lockFileMaintenance": {
     "enabled": true,
-    "schedule": ["before 6am on monday"]
+    "schedule": [
+      "before 6am on monday"
+    ]
   },
-  "minimumReleaseAge": "1 day",
+  "minimumReleaseAge": "3 days",
   "packageRules": [
     {
-      "matchUpdateTypes": ["minor", "patch"],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
       "matchCurrentVersion": "!/^0/",
       "groupName": "minor and patch updates",
       "automerge": true
     },
     {
-      "matchUpdateTypes": ["major"],
+      "matchUpdateTypes": [
+        "major"
+      ],
       "automerge": false,
-      "labels": ["dependencies", "major-update"]
+      "labels": [
+        "dependencies",
+        "major-update"
+      ]
     },
     {
       "matchPackageNames": [
@@ -33,6 +51,12 @@
         "@yuku-toolchain/**"
       ],
       "minimumReleaseAge": "0 days"
+    },
+    {
+      "matchManagers": [
+        "github-actions"
+      ],
+      "groupName": "github-actions"
     }
   ]
 }
