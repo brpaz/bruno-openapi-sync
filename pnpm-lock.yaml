@@ -34,8 +34,8 @@ importers:
         specifier: ^10.0.1
         version: 10.0.1(eslint@10.8.0(jiti@2.6.1))
       '@opencollection/types':
-        specifier: ^0.12.0
-        version: 0.12.0
+        specifier: ^0.14.0
+        version: 0.14.0
       '@types/node':
         specifier: ^26.1.2
         version: 26.1.2
@@ -256,8 +256,8 @@ packages:
       '@emnapi/core': ^1.7.1 || ^2.0.0-alpha.3
       '@emnapi/runtime': ^1.7.1 || ^2.0.0-alpha.3
 
-  '@opencollection/types@0.12.0':
-    resolution: {integrity: sha512-ya41pdpUcfLDQ6uc/7MipWVcqeCW0VLYSdbOch93UH+hzolw3AZmjJQB+qUpRGqwTWE5EJ6Csv7o6E7EsehH9g==}
+  '@opencollection/types@0.14.0':
+    resolution: {integrity: sha512-+WtverwhuGhhAEuPjuj2xgA1q1mb64XdYocTXQJREfUc609FpxdEwWqLAwfHSQO1GRdIdi341JO3IV2w5yT8Rg==}
 
   '@oxc-project/types@0.142.0':
     resolution: {integrity: sha512-7W+2q5AKQVU36fkaryontrHn3YDt1RyUYXatw9i5H8ocYe2sPKSFB6eS8WNPeRKiN1qAWWZUPm7gwFzJGrccqQ==}
@@ -1719,7 +1719,7 @@ snapshots:
       '@tybys/wasm-util': 0.10.3
     optional: true
 
-  '@opencollection/types@0.12.0': {}
+  '@opencollection/types@0.14.0': {}
 
   '@oxc-project/types@0.142.0': {}
 
