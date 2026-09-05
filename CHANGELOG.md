@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v1.0.3 - 2026-09-05
+
+### What's Changed
+
+- chore(renovate): automerge minor/patch, group github-actions, min release age @brpaz (#4)
+
+#### 🧩 Dependency Updates
+
+- chore(deps): pin dependencies @[renovate[bot]](https://github.com/apps/renovate) (#2)
+- chore(deps): update dependency @opencollection/types to ^0.14.0 @[renovate[bot]](https://github.com/apps/renovate) (#3)
+
+**Full Changelog**: [https://github.com/brpaz/bruno-openapi-sync/compare/v1.0.2...v1.0.3](https://github.com/brpaz/bruno-openapi-sync/compare/v1.0.2...v1.0.3)
+
 ## v1.0.2 - 2026-08-02
 
 ### What's Changed
