@@ -2,26 +2,22 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:best-practices",
-    ":dependencyDashboard",
-    "helpers:pinGitHubActionDigests",
-    ":automergeMinor"
+    ":automergeMinor",
+    ":prConcurrentLimit10",
+    "workarounds:typesNodeVersioning"
   ],
-  "timezone": "UTC",
-  "schedule": ["before 6am on monday"],
   "labels": ["dependencies"],
-  "prConcurrentLimit": 10,
-  "prHourlyLimit": 2,
-  "lockFileMaintenance": {
-    "enabled": true,
-    "schedule": ["before 6am on monday"]
-  },
   "minimumReleaseAge": "3 days",
+  "vulnerabilityAlerts": {
+    "enabled": true,
+    "labels": ["security"]
+  },
+  "osvVulnerabilityAlerts": true,
   "packageRules": [
     {
+      "matchManagers": ["github-actions"],
       "matchUpdateTypes": ["minor", "patch"],
-      "matchCurrentVersion": "!/^0/",
-      "groupName": "minor and patch updates",
-      "automerge": true
+      "groupName": "github actions"
     },
     {
       "matchUpdateTypes": ["major"],
@@ -38,10 +34,6 @@
         "@yuku-toolchain/**"
       ],
       "minimumReleaseAge": "0 days"
-    },
-    {
-      "matchManagers": ["github-actions"],
-      "groupName": "github-actions"
     }
   ]
 }
