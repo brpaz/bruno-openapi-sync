@@ -65,7 +65,7 @@
     "lefthook": "2.1.12",
     "prettier": "3.9.6",
     "tsdown": "0.22.14",
-    "typescript": "6.0.3",
+    "typescript": "7.0.2",
     "typescript-eslint": "8.65.0",
     "vitest": "4.1.11"
   }
