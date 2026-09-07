@@ -46,8 +46,8 @@ importers:
         specifier: 10.1.8
         version: 10.1.8(eslint@10.9.1(jiti@2.6.1))
       globals:
-        specifier: 17.8.0
-        version: 17.8.0
+        specifier: 17.12.0
+        version: 17.12.0
       lefthook:
         specifier: 2.1.12
         version: 2.1.12
@@ -894,8 +894,8 @@ packages:
     resolution: {integrity: sha512-1pgFdhK3J2LeM+dVf2Pd424yHx2ou338lC0ErNP2hPx4j8eW1Sp0XqSjNxtk6Tc4Kr5wlWtSvz8cn2yb7/SG/w==}
     engines: {node: '>=20'}
 
-  globals@17.8.0:
-    resolution: {integrity: sha512-Zz/LMDZScFmkakeL2cTHzf+PbWKdpU3uclqkZT7TjDG58j5WPt0PpA+n9uPI24fZtlw07q0OtEi84K+umsRzqQ==}
+  globals@17.12.0:
+    resolution: {integrity: sha512-cezEd/DTyyht9cvSSURyygXPfy04GtWO/5e6ZPvH7fCtjKz9PYOmuawphw1Ctd1f6C+5JypXfGD7ahNMXvevBA==}
     engines: {node: '>=18'}
 
   hookable@6.1.1:
@@ -2256,7 +2256,7 @@ snapshots:
     dependencies:
       ini: 6.0.0
 
-  globals@17.8.0: {}
+  globals@17.12.0: {}
 
   hookable@6.1.1: {}
 
